@@ -7,6 +7,10 @@ public class Carro : MonoBehaviour
     
     public bool capatado = false;
     
+    
+    private Rigidbody2D rb2d;
+    
+    
     public enum Direcao
     {
         Frente, Traz
@@ -16,7 +20,9 @@ public class Carro : MonoBehaviour
     
     void Start()
     {
+        rb2d = GetComponent<Rigidbody2D>();
         
+       // rb2d.velocity 
     }
 
     void Update()
